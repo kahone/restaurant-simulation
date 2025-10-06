@@ -1,0 +1,2300 @@
+{
+  "id": "bella-vista-001",
+  "name": "Bella Vista",
+  "concept": {
+    "theme": "Modern Italian with Nordic influences",
+    "targetAudience": "Urban professionals, couples, food enthusiasts",
+    "priceLevel": 3,
+    "atmosphere": "fine-dining"
+  },
+  "cuisine": {
+    "primary": "Italian",
+    "secondary": ["Nordic", "Mediterranean"],
+    "specialties": ["Handmade pasta", "Wood-fired pizza", "Seasonal risotto", "Tiramisu"],
+    "dietaryOptions": ["vegetarian", "vegan", "gluten-free", "lactose-free"]
+  },
+  "brandIdentity": {
+    "logo": {
+      "primary": {
+        "file": "https://example.com/bella-vista-logo-full-color.svg",
+        "format": "svg",
+        "colorVersion": "full-color"
+      },
+      "variations": [
+        {
+          "name": "horizontal",
+          "file": "https://example.com/bella-vista-logo-horizontal.svg",
+          "usage": "Website header, business cards"
+        },
+        {
+          "name": "icon-only",
+          "file": "https://example.com/bella-vista-icon.svg",
+          "usage": "Social media profile, app icon"
+        },
+        {
+          "name": "monochrome-white",
+          "file": "https://example.com/bella-vista-logo-white.svg",
+          "usage": "Dark backgrounds, window decals"
+        }
+      ],
+      "designElements": {
+        "typography": {
+          "fontFamily": "Playfair Display",
+          "fontWeight": "600",
+          "style": "serif"
+        },
+        "icon": {
+          "description": "Stylized Italian villa with mountain silhouette",
+          "symbolism": "Combines Italian heritage with Nordic landscape"
+        },
+        "colors": [
+          {
+            "name": "Deep Forest Green",
+            "hex": "#2C5F2D",
+            "rgb": {"r": 44, "g": 95, "b": 45},
+            "cmyk": {"c": 54, "m": 0, "y": 53, "k": 63}
+          },
+          {
+            "name": "Warm Terracotta",
+            "hex": "#C9734B",
+            "rgb": {"r": 201, "g": 115, "b": 75},
+            "cmyk": {"c": 0, "m": 43, "y": 63, "k": 21}
+          },
+          {
+            "name": "Cream",
+            "hex": "#F4EFE6",
+            "rgb": {"r": 244, "g": 239, "b": 230},
+            "cmyk": {"c": 0, "m": 2, "y": 6, "k": 4}
+          }
+        ]
+      }
+    },
+    "colorPalette": {
+      "primary": "#2C5F2D",
+      "secondary": "#C9734B",
+      "accent": ["#D4AF37", "#8B4513", "#E8DCC4"],
+      "neutral": ["#FFFFFF", "#F4EFE6", "#3A3A3A", "#1A1A1A"]
+    },
+    "typography": {
+      "headingFont": {
+        "family": "Playfair Display",
+        "weights": [400, 600, 700],
+        "fallback": "Georgia, serif"
+      },
+      "bodyFont": {
+        "family": "Lato",
+        "weights": [300, 400, 700],
+        "fallback": "Arial, sans-serif"
+      },
+      "accentFont": {
+        "family": "Italiana",
+        "usage": "Special menu items, quotes"
+      }
+    },
+    "visualStyle": {
+      "photography": {
+        "style": "Warm and inviting with natural light",
+        "filters": ["Slightly desaturated", "Warm temperature +10", "Soft shadows"],
+        "composition": "Overhead and 45-degree angles, rustic props"
+      },
+      "patterns": [
+        {
+          "name": "Olive Branch",
+          "file": "https://example.com/patterns/olive-branch.svg",
+          "usage": "Menu backgrounds, packaging"
+        },
+        {
+          "name": "Italian Tile",
+          "file": "https://example.com/patterns/italian-tile.svg",
+          "usage": "Accent walls, coasters"
+        }
+      ],
+      "illustrations": {
+        "style": "Hand-drawn botanical line art",
+        "elements": ["Herbs", "Vegetables", "Wine bottles", "Pasta shapes"]
+      }
+    }
+  },
+  "signage": {
+    "exterior": [
+      {
+        "type": "main-sign",
+        "content": {
+          "text": "BELLA VISTA",
+          "logo": true,
+          "graphics": ["Decorative brackets"]
+        },
+        "design": {
+          "width": 280,
+          "height": 80,
+          "material": "Brushed brass with LED backlighting",
+          "colors": ["#2C5F2D", "#D4AF37"],
+          "illuminated": true,
+          "illuminationType": "backlit"
+        },
+        "position": {
+          "location": "above main entrance",
+          "height": 320,
+          "visible": true
+        }
+      },
+      {
+        "type": "window-decal",
+        "content": {
+          "text": "Autentica Cucina Italiana",
+          "logo": false,
+          "graphics": ["Olive branch border"]
+        },
+        "design": {
+          "width": 120,
+          "height": 40,
+          "material": "Frosted vinyl with gold foil",
+          "colors": ["#2C5F2D", "#D4AF37"],
+          "illuminated": false,
+          "illuminationType": "none"
+        },
+        "position": {
+          "location": "main window left",
+          "height": 180,
+          "visible": true
+        }
+      },
+      {
+        "type": "awning",
+        "content": {
+          "text": "BELLA VISTA RISTORANTE",
+          "logo": true,
+          "graphics": []
+        },
+        "design": {
+          "width": 400,
+          "height": 120,
+          "material": "Canvas with brass frame",
+          "colors": ["#2C5F2D", "#F4EFE6"],
+          "illuminated": false,
+          "illuminationType": "none"
+        },
+        "position": {
+          "location": "extending over sidewalk",
+          "height": 280,
+          "visible": true
+        }
+      }
+    ],
+    "windowGraphics": [
+      {
+        "windowId": "front-window-001",
+        "design": {
+          "type": "partial-frosted",
+          "layout": "https://example.com/window-designs/main-window.ai",
+          "elements": [
+            {
+              "type": "logo",
+              "content": "Bella Vista logo",
+              "position": {"x": 50, "y": 30, "width": 80, "height": 80},
+              "opacity": 100
+            },
+            {
+              "type": "text",
+              "content": "Reservations: +358 40 123 4567",
+              "position": {"x": 20, "y": 150, "width": 160, "height": 20},
+              "opacity": 90
+            },
+            {
+              "type": "decorative",
+              "content": "Italian vineyard illustration",
+              "position": {"x": 10, "y": 180, "width": 180, "height": 120},
+              "opacity": 30
+            }
+          ],
+          "seasonalChanges": [
+            {
+              "season": "Christmas",
+              "design": "https://example.com/window-designs/christmas.ai"
+            },
+            {
+              "season": "Summer",
+              "design": "https://example.com/window-designs/summer.ai"
+            }
+          ]
+        }
+      },
+      {
+        "windowId": "front-window-002",
+        "design": {
+          "type": "decals",
+          "layout": "https://example.com/window-designs/side-window.ai",
+          "elements": [
+            {
+              "type": "text",
+              "content": "APERTO / OPEN",
+              "position": {"x": 40, "y": 50, "width": 120, "height": 40},
+              "opacity": 100
+            },
+            {
+              "type": "hours",
+              "content": "Ma-Pe 11-22 | La-Su 12-23",
+              "position": {"x": 30, "y": 100, "width": 140, "height": 30},
+              "opacity": 90
+            }
+          ],
+          "seasonalChanges": []
+        }
+      }
+    ],
+    "interior": [
+      {
+        "type": "menu-board",
+        "location": "entrance wall",
+        "design": {
+          "file": "https://example.com/signage/menu-board.pdf",
+          "size": {"width": 60, "height": 80},
+          "material": "Chalkboard with ornate gold frame"
+        }
+      },
+      {
+        "type": "wayfinding",
+        "location": "hallway to restrooms",
+        "design": {
+          "file": "https://example.com/signage/wayfinding.svg",
+          "size": {"width": 20, "height": 30},
+          "material": "Brass plaques"
+        }
+      },
+      {
+        "type": "wall-art",
+        "location": "main dining area",
+        "design": {
+          "file": "https://example.com/art/italian-landscape.jpg",
+          "size": {"width": 180, "height": 120},
+          "material": "Canvas print with wooden frame"
+        }
+      }
+    ]
+  },
+  "layout": {
+    "totalArea": 185,
+    "floorPlan": "https://example.com/floorplans/bella-vista-main.pdf",
+    "dimensions": {
+      "width": 12.5,
+      "length": 18.0,
+      "height": 3.2
+    },
+    "areas": [
+      {
+        "name": "Main Dining Room",
+        "type": "dining",
+        "area": 95,
+        "position": {"x": 0, "y": 0, "z": 0}
+      },
+      {
+        "name": "Open Kitchen",
+        "type": "kitchen",
+        "area": 45,
+        "position": {"x": 12.5, "y": 0, "z": 0}
+      },
+      {
+        "name": "Bar Area",
+        "type": "bar",
+        "area": 18,
+        "position": {"x": 0, "y": 15, "z": 0}
+      },
+      {
+        "name": "Entrance & Coat Check",
+        "type": "entrance",
+        "area": 12,
+        "position": {"x": 5, "y": 0, "z": 0}
+      },
+      {
+        "name": "Restrooms",
+        "type": "restroom",
+        "area": 10,
+        "position": {"x": 0, "y": 12, "z": 0}
+      },
+      {
+        "name": "Storage",
+        "type": "storage",
+        "area": 5,
+        "position": {"x": 10, "y": 16, "z": 0}
+      }
+    ]
+  },
+  "seating": {
+    "totalCapacity": 58,
+    "tables": [
+      {
+        "id": "T1",
+        "number": 1,
+        "seats": 2,
+        "type": "standard",
+        "shape": "round",
+        "position": {"x": 2.5, "y": 3.0, "rotation": 0},
+        "features": ["window-view"]
+      },
+      {
+        "id": "T2",
+        "number": 2,
+        "seats": 2,
+        "type": "standard",
+        "shape": "round",
+        "position": {"x": 5.0, "y": 3.0, "rotation": 0},
+        "features": ["window-view"]
+      },
+      {
+        "id": "T3",
+        "number": 3,
+        "seats": 4,
+        "type": "standard",
+        "shape": "square",
+        "position": {"x": 2.5, "y": 6.0, "rotation": 0},
+        "features": []
+      },
+      {
+        "id": "T4",
+        "number": 4,
+        "seats": 4,
+        "type": "standard",
+        "shape": "square",
+        "position": {"x": 6.5, "y": 6.0, "rotation": 0},
+        "features": []
+      },
+      {
+        "id": "T5",
+        "number": 5,
+        "seats": 6,
+        "type": "standard",
+        "shape": "rectangular",
+        "position": {"x": 2.5, "y": 9.0, "rotation": 0},
+        "features": []
+      },
+      {
+        "id": "T6",
+        "number": 6,
+        "seats": 6,
+        "type": "standard",
+        "shape": "rectangular",
+        "position": {"x": 7.0, "y": 9.0, "rotation": 0},
+        "features": []
+      },
+      {
+        "id": "T7",
+        "number": 7,
+        "seats": 8,
+        "type": "standard",
+        "shape": "rectangular",
+        "position": {"x": 4.0, "y": 12.5, "rotation": 90},
+        "features": ["private"]
+      },
+      {
+        "id": "T8",
+        "number": 8,
+        "seats": 2,
+        "type": "booth",
+        "shape": "rectangular",
+        "position": {"x": 1.0, "y": 15.0, "rotation": 0},
+        "features": ["near-fireplace"]
+      },
+      {
+        "id": "T9",
+        "number": 9,
+        "seats": 2,
+        "type": "booth",
+        "shape": "rectangular",
+        "position": {"x": 3.5, "y": 15.0, "rotation": 0},
+        "features": []
+      },
+      {
+        "id": "T10",
+        "number": 10,
+        "seats": 4,
+        "type": "standard",
+        "shape": "round",
+        "position": {"x": 8.0, "y": 3.5, "rotation": 0},
+        "features": []
+      }
+    ],
+    "barSeats": 8,
+    "outdoorSeats": 0
+  },
+  "lighting": {
+    "zones": [
+      {
+        "name": "Main Dining",
+        "fixtures": [
+          {
+            "id": "PD-001",
+            "type": "pendant",
+            "brand": "Flos",
+            "model": "IC Lights S2",
+            "position": {"x": 3.0, "y": 4.0, "z": 2.4},
+            "specifications": {
+              "wattage": 25,
+              "lumens": 800,
+              "colorTemperature": 2700,
+              "dimmable": true,
+              "smartControl": true
+            },
+            "design": {
+              "style": "Modern spherical brass",
+              "material": "Brass and glass",
+              "color": "Brushed brass",
+              "size": {"diameter": 30, "height": 40}
+            }
+          },
+          {
+            "id": "PD-002",
+            "type": "pendant",
+            "brand": "Flos",
+            "model": "IC Lights S2",
+            "position": {"x": 7.0, "y": 4.0, "z": 2.4},
+            "specifications": {
+              "wattage": 25,
+              "lumens": 800,
+              "colorTemperature": 2700,
+              "dimmable": true,
+              "smartControl": true
+            },
+            "design": {
+              "style": "Modern spherical brass",
+              "material": "Brass and glass",
+              "color": "Brushed brass",
+              "size": {"diameter": 30, "height": 40}
+            }
+          },
+          {
+            "id": "CH-001",
+            "type": "chandelier",
+            "brand": "Custom Italian",
+            "model": "Murano Glass Multi-Light",
+            "position": {"x": 5.0, "y": 10.0, "z": 2.6},
+            "specifications": {
+              "wattage": 150,
+              "lumens": 3000,
+              "colorTemperature": 2400,
+              "dimmable": true,
+              "smartControl": true
+            },
+            "design": {
+              "style": "Traditional Murano",
+              "material": "Hand-blown glass",
+              "color": "Amber and clear",
+              "size": {"diameter": 80, "height": 70}
+            }
+          },
+          {
+            "id": "RC-001",
+            "type": "recessed",
+            "brand": "Philips",
+            "model": "Hue Ambiance",
+            "position": {"x": 1.5, "y": 6.0, "z": 3.0},
+            "specifications": {
+              "wattage": 9,
+              "lumens": 600,
+              "colorTemperature": 2700,
+              "dimmable": true,
+              "smartControl": true
+            },
+            "design": {
+              "style": "Minimalist recessed",
+              "material": "Aluminum",
+              "color": "White",
+              "size": {"diameter": 10, "height": 8}
+            }
+          }
+        ],
+        "ambiance": {
+          "scenes": [
+            {
+              "name": "Lunch Service",
+              "time": "11:00-15:00",
+              "brightness": 75,
+              "colorTemp": 3000,
+              "fixtureSettings": [
+                {"fixtureId": "PD-001", "brightness": 70},
+                {"fixtureId": "PD-002", "brightness": 70},
+                {"fixtureId": "CH-001", "brightness": 60},
+                {"fixtureId": "RC-001", "brightness": 80}
+              ]
+            },
+            {
+              "name": "Dinner Service",
+              "time": "17:00-22:00",
+              "brightness": 45,
+              "colorTemp": 2400,
+              "fixtureSettings": [
+                {"fixtureId": "PD-001", "brightness": 50},
+                {"fixtureId": "PD-002", "brightness": 50},
+                {"fixtureId": "CH-001", "brightness": 70},
+                {"fixtureId": "RC-001", "brightness": 30}
+              ]
+            },
+            {
+              "name": "Late Evening",
+              "time": "22:00-23:00",
+              "brightness": 30,
+              "colorTemp": 2200,
+              "fixtureSettings": [
+                {"fixtureId": "PD-001", "brightness": 35},
+                {"fixtureId": "PD-002", "brightness": 35},
+                {"fixtureId": "CH-001", "brightness": 50},
+                {"fixtureId": "RC-001", "brightness": 20}
+              ]
+            }
+          ]
+        },
+        "naturalLight": {
+          "windows": [
+            {
+              "id": "W1",
+              "size": {"width": 250, "height": 200},
+              "orientation": "south",
+              "treatments": {
+                "type": "shades",
+                "opacity": 60,
+                "automated": true
+              }
+            },
+            {
+              "id": "W2",
+              "size": {"width": 150, "height": 200},
+              "orientation": "west",
+              "treatments": {
+                "type": "curtains",
+                "opacity": 40,
+                "automated": false
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Bar Area",
+        "fixtures": [
+          {
+            "id": "LED-001",
+            "type": "led-strip",
+            "brand": "Philips Hue",
+            "model": "Lightstrip Plus",
+            "position": {"x": 1.0, "y": 16.0, "z": 1.2},
+            "specifications": {
+              "wattage": 20,
+              "lumens": 1600,
+              "colorTemperature": 2700,
+              "dimmable": true,
+              "smartControl": true
+            },
+            "design": {
+              "style": "Under-bar accent lighting",
+              "material": "LED strip",
+              "color": "RGB capable",
+              "size": {"diameter": 0, "height": 300}
+            }
+          },
+          {
+            "id": "PD-BAR-001",
+            "type": "pendant",
+            "brand": "Tom Dixon",
+            "model": "Beat Light Wide",
+            "position": {"x": 2.0, "y": 16.5, "z": 2.0},
+            "specifications": {
+              "wattage": 40,
+              "lumens": 1200,
+              "colorTemperature": 2700,
+              "dimmable": true,
+              "smartControl": false
+            },
+            "design": {
+              "style": "Industrial brass",
+              "material": "Spun brass",
+              "color": "Brushed brass",
+              "size": {"diameter": 36, "height": 27}
+            }
+          }
+        ],
+        "ambiance": {
+          "scenes": [
+            {
+              "name": "Happy Hour",
+              "time": "16:00-19:00",
+              "brightness": 65,
+              "colorTemp": 2700,
+              "fixtureSettings": [
+                {"fixtureId": "LED-001", "brightness": 80},
+                {"fixtureId": "PD-BAR-001", "brightness": 60}
+              ]
+            },
+            {
+              "name": "Evening Bar",
+              "time": "19:00-23:00",
+              "brightness": 50,
+              "colorTemp": 2400,
+              "fixtureSettings": [
+                {"fixtureId": "LED-001", "brightness": 70},
+                {"fixtureId": "PD-BAR-001", "brightness": 50}
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "audioAtmosphere": {
+    "musicSystem": {
+      "provider": "Sonos Professional",
+      "speakers": [
+        {
+          "id": "SPK-01",
+          "zone": "Main Dining",
+          "type": "Sonos In-Ceiling",
+          "position": {"x": 3.0, "y": 5.0, "z": 3.0},
+          "power": 80,
+          "volumeControl": "zoned"
+        },
+        {
+          "id": "SPK-02",
+          "zone": "Main Dining",
+          "type": "Sonos In-Ceiling",
+          "position": {"x": 7.0, "y": 5.0, "z": 3.0},
+          "power": 80,
+          "volumeControl": "zoned"
+        },
+        {
+          "id": "SPK-03",
+          "zone": "Main Dining",
+          "type": "Sonos In-Ceiling",
+          "position": {"x": 5.0, "y": 11.0, "z": 3.0},
+          "power": 80,
+          "volumeControl": "zoned"
+        },
+        {
+          "id": "SPK-04",
+          "zone": "Bar",
+          "type": "Sonos Five",
+          "position": {"x": 1.5, "y": 16.5, "z": 2.0},
+          "power": 150,
+          "volumeControl": "independent"
+        },
+        {
+          "id": "SPK-05",
+          "zone": "Kitchen",
+          "type": "Sonos Roam",
+          "position": {"x": 14.0, "y": 8.0, "z": 1.8},
+          "power": 20,
+          "volumeControl": "independent"
+        }
+      ]
+    },
+    "playlists": [
+      {
+        "name": "Buongiorno - Morning Coffee",
+        "timeSlot": {
+          "start": "08:00",
+          "end": "11:00",
+          "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+        },
+        "mood": "Light and uplifting",
+        "genres": ["Soft Pop", "Indie Folk", "Acoustic"],
+        "tempo": {
+          "bpmRange": {"min": 90, "max": 115},
+          "energy": "medium"
+        },
+        "volume": 30,
+        "tracks": [
+          {
+            "title": "Il Postino (Main Theme)",
+            "artist": "Luis Bacalov",
+            "album": "Il Postino OST",
+            "duration": 180,
+            "spotifyUri": "spotify:track:example1",
+            "genre": "Classical"
+          },
+          {
+            "title": "Such Great Heights",
+            "artist": "Iron & Wine",
+            "album": "Our Endless Numbered Days",
+            "duration": 265,
+            "spotifyUri": "spotify:track:example2",
+            "genre": "Indie Folk"
+          },
+          {
+            "title": "Holocene",
+            "artist": "Bon Iver",
+            "album": "Bon Iver",
+            "duration": 338,
+            "spotifyUri": "spotify:track:example3",
+            "genre": "Indie Folk"
+          }
+        ],
+        "restrictions": {
+          "explicit": false,
+          "excludedWords": ["explicit", "violence"]
+        }
+      },
+      {
+        "name": "Pranzo - Lunch Service",
+        "timeSlot": {
+          "start": "11:00",
+          "end": "15:00",
+          "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+        },
+        "mood": "Warm and welcoming",
+        "genres": ["Italian Classic", "Bossa Nova", "Jazz"],
+        "tempo": {
+          "bpmRange": {"min": 100, "max": 130},
+          "energy": "medium"
+        },
+        "volume": 35,
+        "tracks": [
+          {
+            "title": "Volare (Nel Blu Dipinto Di Blu)",
+            "artist": "Dean Martin",
+            "album": "This Time I'm Swingin'!",
+            "duration": 215,
+            "spotifyUri": "spotify:track:example4",
+            "genre": "Italian Classic"
+          },
+          {
+            "title": "La Vie En Rose",
+            "artist": "Édith Piaf",
+            "album": "Edith Piaf Classics",
+            "duration": 187,
+            "spotifyUri": "spotify:track:example5",
+            "genre": "French Classic"
+          },
+          {
+            "title": "That's Amore",
+            "artist": "Dean Martin",
+            "album": "Swingin' Down Yonder",
+            "duration": 186,
+            "spotifyUri": "spotify:track:example6",
+            "genre": "Italian Classic"
+          },
+          {
+            "title": "Corcovado (Quiet Nights)",
+            "artist": "Stan Getz & João Gilberto",
+            "album": "Getz/Gilberto",
+            "duration": 267,
+            "spotifyUri": "spotify:track:example7",
+            "genre": "Bossa Nova"
+          },
+          {
+            "title": "Take Five",
+            "artist": "Dave Brubeck",
+            "album": "Time Out",
+            "duration": 324,
+            "spotifyUri": "spotify:track:example8",
+            "genre": "Jazz"
+          }
+        ],
+        "restrictions": {
+          "explicit": false,
+          "excludedWords": []
+        }
+      },
+      {
+        "name": "Cena - Dinner Ambiance",
+        "timeSlot": {
+          "start": "17:00",
+          "end": "22:00",
+          "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+        },
+        "mood": "Sophisticated and romantic",
+        "genres": ["Jazz", "Classical Italian", "Contemporary Instrumental"],
+        "tempo": {
+          "bpmRange": {"min": 70, "max": 95},
+          "energy": "low"
+        },
+        "volume": 28,
+        "tracks": [
+          {
+            "title": "Autumn Leaves",
+            "artist": "Bill Evans Trio",
+            "album": "Portrait in Jazz",
+            "duration": 309,
+            "spotifyUri": "spotify:track:example9",
+            "genre": "Jazz"
+          },
+          {
+            "title": "La Notte",
+            "artist": "Ludovico Einaudi",
+            "album": "Nightbook",
+            "duration": 267,
+            "spotifyUri": "spotify:track:example10",
+            "genre": "Contemporary Classical"
+          },
+          {
+            "title": "Con Te Partirò",
+            "artist": "Andrea Bocelli",
+            "album": "Romanza",
+            "duration": 258,
+            "spotifyUri": "spotify:track:example11",
+            "genre": "Italian Opera Pop"
+          },
+          {
+            "title": "My Funny Valentine",
+            "artist": "Chet Baker",
+            "album": "Chet Baker Sings",
+            "duration": 144,
+            "spotifyUri": "spotify:track:example12",
+            "genre": "Jazz"
+          },
+          {
+            "title": "Nuvole Bianche",
+            "artist": "Ludovico Einaudi",
+            "album": "Una Mattina",
+            "duration": 339,
+            "spotifyUri": "spotify:track:example13",
+            "genre": "Contemporary Classical"
+          }
+        ],
+        "restrictions": {
+          "explicit": false,
+          "excludedWords": []
+        }
+      },
+      {
+        "name": "Dopocena - Late Evening",
+        "timeSlot": {
+          "start": "22:00",
+          "end": "23:30",
+          "days": ["friday", "saturday"]
+        },
+        "mood": "Relaxed and intimate",
+        "genres": ["Lounge", "Downtempo", "Ambient"],
+        "tempo": {
+          "bpmRange": {"min": 60, "max": 85},
+          "energy": "low"
+        },
+        "volume": 25,
+        "tracks": [
+          {
+            "title": "Teardrop",
+            "artist": "Massive Attack",
+            "album": "Mezzanine",
+            "duration": 330,
+            "spotifyUri": "spotify:track:example14",
+            "genre": "Trip Hop"
+          },
+          {
+            "title": "Porcelain",
+            "artist": "Moby",
+            "album": "Play",
+            "duration": 242,
+            "spotifyUri": "spotify:track:example15",
+            "genre": "Ambient"
+          }
+        ],
+        "restrictions": {
+          "explicit": false,
+          "excludedWords": []
+        }
+      }
+    ],
+    "ambientSounds": [
+      {
+        "type": "Kitchen sounds (subtle)",
+        "volume": 15,
+        "zones": ["Main Dining"]
+      }
+    ],
+    "acoustics": {
+      "soundproofing": {
+        "walls": true,
+        "ceiling": true,
+        "floor": false
+      },
+      "materials": [
+        {
+          "location": "Ceiling",
+          "material": "Acoustic panels with fabric covering",
+          "absorptionCoefficient": 0.85
+        },
+        {
+          "location": "Walls - Main dining",
+          "material": "Textured plaster with fabric panels",
+          "absorptionCoefficient": 0.65
+        }
+      ],
+      "noiseLevel": {
+        "target": 65,
+        "typical": 68
+      }
+    }
+  },
+  "technology": {
+    "posSystem": {
+      "provider": "Toast POS",
+      "features": ["Order management", "Payment processing", "Inventory tracking", "Table management", "Kitchen display system"]
+    },
+    "reservationSystem": {
+      "provider": "OpenTable",
+      "onlineBooking": true
+    },
+    "wifi": {
+      "available": true,
+      "customerAccess": true
+    },
+    "audioSystem": {
+      "speakers": 5,
+      "zones": 3
+    },
+    "securityCameras": 6,
+    "digitalDisplays": {
+      "menuBoards": [
+        {
+          "id": "MB-01",
+          "location": "Above counter - left",
+          "position": {"x": 11.5, "y": 3.0, "z": 2.5, "rotation": 0},
+          "hardware": {
+            "brand": "Samsung",
+            "model": "QM55R",
+            "screenSize": 55,
+            "resolution": {"width": 3840, "height": 2160},
+            "orientation": "portrait",
+            "brightness": 500,
+            "mounting": "wall-mounted"
+          },
+          "content": {
+            "type": "rotating-sections",
+            "template": "https://example.com/templates/menu-board-antipasti.json",
+            "layout": {
+              "columns": 1,
+              "sections": [
+                {
+                  "name": "Antipasti",
+                  "displayTime": 15,
+                  "items": [
+                    {
+                      "name": "Bruschetta Classica",
+                      "description": "Tomato, basil, garlic, EVOO",
+                      "price": "€12",
+                      "image": "https://example.com/dishes/bruschetta.jpg",
+                      "calories": "180 kcal",
+                      "badges": ["VEGAN"]
+                    },
+                    {
+                      "name": "Burrata con Prosciutto",
+                      "description": "Creamy burrata, San Daniele ham",
+                      "price": "€18",
+                      "image": "https://example.com/dishes/burrata.jpg",
+                      "calories": "320 kcal",
+                      "badges": []
+                    },
+                    {
+                      "name": "Carpaccio di Manzo",
+                      "description": "Thin beef, arugula, parmesan",
+                      "price": "€16",
+                      "image": "https://example.com/dishes/carpaccio.jpg",
+                      "calories": "210 kcal",
+                      "badges": ["GLUTEN-FREE"]
+                    },
+                    {
+                      "name": "Calamari Fritti",
+                      "description": "Crispy squid, lemon aioli",
+                      "price": "€15",
+                      "image": "https://example.com/dishes/calamari.jpg",
+                      "calories": "380 kcal",
+                      "badges": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Insalate",
+                  "displayTime": 12,
+                  "items": [
+                    {
+                      "name": "Caprese",
+                      "description": "Heirloom tomatoes, buffalo mozzarella",
+                      "price": "€14",
+                      "image": "https://example.com/dishes/caprese.jpg",
+                      "calories": "240 kcal",
+                      "badges": ["VEGETARIAN"]
+                    },
+                    {
+                      "name": "Caesar Romana",
+                      "description": "Romaine, anchovy dressing, croutons",
+                      "price": "€13",
+                      "image": "https://example.com/dishes/caesar.jpg",
+                      "calories": "290 kcal",
+                      "badges": []
+                    },
+                    {
+                      "name": "Rucola e Pera",
+                      "description": "Arugula, pear, gorgonzola, walnuts",
+                      "price": "€13",
+                      "image": "https://example.com/dishes/arugula-pear.jpg",
+                      "calories": "260 kcal",
+                      "badges": ["VEGETARIAN"]
+                    }
+                  ]
+                }
+              ]
+            },
+            "animations": [
+              {
+                "type": "fade",
+                "duration": 1.5,
+                "element": "section-transition"
+              },
+              {
+                "type": "slide",
+                "duration": 0.8,
+                "element": "item-entry"
+              }
+            ],
+            "updateSchedule": {
+              "lunch": {
+                "start": "11:00",
+                "end": "15:00",
+                "menuVersion": "lunch-specials"
+              },
+              "dinner": {
+                "start": "17:00",
+                "end": "22:00",
+                "menuVersion": "dinner-full"
+              }
+            }
+          },
+          "designSettings": {
+            "backgroundColor": "#F4EFE6",
+            "textColor": "#2C5F2D",
+            "accentColor": "#C9734B",
+            "fontFamily": "Playfair Display",
+            "fontSize": {
+              "header": 48,
+              "item": 32,
+              "price": 36,
+              "description": 20
+            },
+            "spacing": 24,
+            "borderRadius": 8
+          }
+        },
+        {
+          "id": "MB-02",
+          "location": "Above counter - center",
+          "position": {"x": 13.0, "y": 3.0, "z": 2.5, "rotation": 0},
+          "hardware": {
+            "brand": "Samsung",
+            "model": "QM55R",
+            "screenSize": 55,
+            "resolution": {"width": 3840, "height": 2160},
+            "orientation": "portrait",
+            "brightness": 500,
+            "mounting": "wall-mounted"
+          },
+          "content": {
+            "type": "rotating-sections",
+            "template": "https://example.com/templates/menu-board-pasta-pizza.json",
+            "layout": {
+              "columns": 1,
+              "sections": [
+                {
+                  "name": "Pasta Fresca",
+                  "displayTime": 18,
+                  "items": [
+                    {
+                      "name": "Tagliatelle al Tartufo",
+                      "description": "Black truffle, butter, parmesan",
+                      "price": "€28",
+                      "image": "https://example.com/dishes/tagliatelle-truffle.jpg",
+                      "calories": "520 kcal",
+                      "badges": ["CHEF'S SPECIAL"]
+                    },
+                    {
+                      "name": "Spaghetti Carbonara",
+                      "description": "Guanciale, egg, pecorino romano",
+                      "price": "€18",
+                      "image": "https://example.com/dishes/carbonara.jpg",
+                      "calories": "680 kcal",
+                      "badges": []
+                    },
+                    {
+                      "name": "Ravioli di Ricotta e Spinaci",
+                      "description": "Sage butter, pine nuts",
+                      "price": "€19",
+                      "image": "https://example.com/dishes/ravioli.jpg",
+                      "calories": "450 kcal",
+                      "badges": ["VEGETARIAN"]
+                    },
+                    {
+                      "name": "Linguine alle Vongole",
+                      "description": "Fresh clams, white wine, garlic",
+                      "price": "€22",
+                      "image": "https://example.com/dishes/vongole.jpg",
+                      "calories": "420 kcal",
+                      "badges": []
+                    },
+                    {
+                      "name": "Pappardelle al Ragù",
+                      "description": "Slow-cooked beef & pork ragù",
+                      "price": "€21",
+                      "image": "https://example.com/dishes/pappardelle.jpg",
+                      "calories": "620 kcal",
+                      "badges": []
+                    }
+                  ]
+                },
+                {
+                  "name": "Pizza al Forno",
+                  "displayTime": 15,
+                  "items": [
+                    {
+                      "name": "Margherita DOC",
+                      "description": "San Marzano tomatoes, buffalo mozzarella, basil",
+                      "price": "€16",
+                      "image": "https://example.com/dishes/margherita.jpg",
+                      "calories": "800 kcal",
+                      "badges": ["VEGETARIAN"]
+                    },
+                    {
+                      "name": "Diavola",
+                      "description": "Spicy salami, chili oil, mozzarella",
+                      "price": "€18",
+                      "image": "https://example.com/dishes/diavola.jpg",
+                      "calories": "920 kcal",
+                      "badges": ["SPICY"]
+                    },
+                    {
+                      "name": "Quattro Formaggi",
+                      "description": "Gorgonzola, fontina, parmesan, mozzarella",
+                      "price": "€17",
+                      "image": "https://example.com/dishes/quattro-formaggi.jpg",
+                      "calories": "980 kcal",
+                      "badges": ["VEGETARIAN"]
+                    },
+                    {
+                      "name": "Prosciutto e Funghi",
+                      "description": "Ham, mushrooms, mozzarella",
+                      "price": "€19",
+                      "image": "https://example.com/dishes/prosciutto-funghi.jpg",
+                      "calories": "850 kcal",
+                      "badges": []
+                    }
+                  ]
+                }
+              ]
+            },
+            "animations": [
+              {
+                "type": "fade",
+                "duration": 1.5,
+                "element": "section-transition"
+              }
+            ],
+            "updateSchedule": {
+              "lunch": {
+                "start": "11:00",
+                "end": "15:00",
+                "menuVersion": "lunch-main"
+              },
+              "dinner": {
+                "start": "17:00",
+                "end": "22:00",
+                "menuVersion": "dinner-main"
+              }
+            }
+          },
+          "designSettings": {
+            "backgroundColor": "#F4EFE6",
+            "textColor": "#2C5F2D",
+            "accentColor": "#C9734B",
+            "fontFamily": "Playfair Display",
+            "fontSize": {
+              "header": 48,
+              "item": 32,
+              "price": 36,
+              "description": 20
+            },
+            "spacing": 24,
+            "borderRadius": 8
+          }
+        },
+        {
+          "id": "MB-03",
+          "location": "Above counter - right",
+          "position": {"x": 14.5, "y": 3.0, "z": 2.5, "rotation": 0},
+          "hardware": {
+            "brand": "Samsung",
+            "model": "QM55R",
+            "screenSize": 55,
+            "resolution": {"width": 3840, "height": 2160},
+            "orientation": "portrait",
+            "brightness": 500,
+            "mounting": "wall-mounted"
+          },
+          "content": {
+            "type": "rotating-sections",
+            "template": "https://example.com/templates/menu-board-mains-dolci.json",
+            "layout": {
+              "columns": 1,
+              "sections": [
+                {
+                  "name": "Secondi Piatti",
+                  "displayTime": 16,
+                  "items": [
+                    {
+                      "name": "Osso Buco alla Milanese",
+                      "description": "Braised veal shank, saffron risotto",
+                      "price": "€32",
+                      "image": "https://example.com/dishes/osso-buco.jpg",
+                      "calories": "780 kcal",
+                      "badges": ["SIGNATURE"]
+                    },
+                    {
+                      "name": "Branzino al Forno",
+                      "description": "Sea bass, lemon, herbs, vegetables",
+                      "price": "€29",
+                      "image": "https://example.com/dishes/branzino.jpg",
+                      "calories": "420 kcal",
+                      "badges": ["GLUTEN-FREE"]
+                    },
+                    {
+                      "name": "Bistecca Fiorentina",
+                      "description": "T-bone steak, rosemary potatoes (serves 2)",
+                      "price": "€65",
+                      "image": "https://example.com/dishes/bistecca.jpg",
+                      "calories": "1200 kcal",
+                      "badges": []
+                    },
+                    {
+                      "name": "Melanzane alla Parmigiana",
+                      "description": "Layered eggplant, tomato, mozzarella",
+                      "price": "€18",
+                      "image": "https://example.com/dishes/parmigiana.jpg",
+                      "calories": "520 kcal",
+                      "badges": ["VEGETARIAN"]
+                    }
+                  ]
+                },
+                {
+                  "name": "Dolci & Bevande",
+                  "displayTime": 14,
+                  "items": [
+                    {
+                      "name": "Tiramisù Classico",
+                      "description": "Mascarpone, espresso, cocoa",
+                      "price": "€9",
+                      "image": "https://example.com/dishes/tiramisu.jpg",
+                      "calories": "450 kcal",
+                      "badges": ["HOUSE MADE"]
+                    },
+                    {
+                      "name": "Panna Cotta",
+                      "description": "Vanilla cream, berry compote",
+                      "price": "€8",
+                      "image": "https://example.com/dishes/panna-cotta.jpg",
+                      "calories": "320 kcal",
+                      "badges": ["GLUTEN-FREE"]
+                    },
+                    {
+                      "name": "Gelato Artigianale",
+                      "description": "Three scoops, choice of flavors",
+                      "price": "€7",
+                      "image": "https://example.com/dishes/gelato.jpg",
+                      "calories": "280 kcal",
+                      "badges": []
+                    },
+                    {
+                      "name": "Espresso / Cappuccino",
+                      "description": "Lavazza, single origin",
+                      "price": "€3.5 / €4.5",
+                      "image": "https://example.com/dishes/coffee.jpg",
+                      "calories": "5-120 kcal",
+                      "badges": []
+                    }
+                  ]
+                }
+              ]
+            },
+            "animations": [
+              {
+                "type": "fade",
+                "duration": 1.5,
+                "element": "section-transition"
+              }
+            ],
+            "updateSchedule": {
+              "lunch": {
+                "start": "11:00",
+                "end": "15:00",
+                "menuVersion": "lunch-mains"
+              },
+              "dinner": {
+                "start": "17:00",
+                "end": "22:00",
+                "menuVersion": "dinner-mains"
+              }
+            }
+          },
+          "designSettings": {
+            "backgroundColor": "#F4EFE6",
+            "textColor": "#2C5F2D",
+            "accentColor": "#C9734B",
+            "fontFamily": "Playfair Display",
+            "fontSize": {
+              "header": 48,
+              "item": 32,
+              "price": 36,
+              "description": 20
+            },
+            "spacing": 24,
+            "borderRadius": 8
+          }
+        }
+      ],
+      "atmosphereDisplays": [
+        {
+          "id": "AD-01",
+          "name": "Main Wall Feature Display",
+          "location": "Main dining wall",
+          "position": {"x": 9.0, "y": 8.0, "z": 1.8, "rotation": 0},
+          "hardware": {
+            "brand": "LG",
+            "model": "OLED65C3",
+            "screenSize": 65,
+            "resolution": {"width": 3840, "height": 2160},
+            "orientation": "landscape",
+            "brightness": 800,
+            "mounting": "wall-mounted",
+            "bezel": "Ultra-thin 2mm black"
+          },
+          "content": {
+            "purpose": "mixed",
+            "playlists": [
+              {
+                "name": "Italian Landscapes",
+                "schedule": {
+                  "startTime": "11:00",
+                  "endTime": "22:00",
+                  "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+                  "priority": 1
+                },
+                "items": [
+                  {
+                    "type": "video",
+                    "mediaUrl": "https://example.com/videos/tuscany-vineyard.mp4",
+                    "duration": 120,
+                    "title": "Tuscan Vineyards",
+                    "description": "Slow pan over rolling hills",
+                    "transition": "fade",
+                    "overlay": {
+                      "text": "",
+                      "position": "none",
+                      "style": {}
+                    }
+                  },
+                  {
+                    "type": "video",
+                    "mediaUrl": "https://example.com/videos/amalfi-coast.mp4",
+                    "duration": 90,
+                    "title": "Amalfi Coast",
+                    "description": "Coastal sunset timelapse",
+                    "transition": "dissolve",
+                    "overlay": {
+                      "text": "",
+                      "position": "none",
+                      "style": {}
+                    }
+                  },
+                  {
+                    "type": "video",
+                    "mediaUrl": "https://example.com/videos/italian-market.mp4",
+                    "duration": 100,
+                    "title": "Fresh Market",
+                    "description": "Vibrant produce displays",
+                    "transition": "fade",
+                    "overlay": {
+                      "text": "",
+                      "position": "none",
+                      "style": {}
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "mediaUrl": "https://example.com/images/pasta-making.jpg",
+                    "duration": 15,
+                    "title": "Handmade Pasta",
+                    "description": "Fresh pasta preparation",
+                    "transition": "fade",
+                    "overlay": {
+                      "text": "Made fresh daily",
+                      "position": "bottom-center",
+                      "style": {"fontSize": 32, "color": "#F4EFE6", "fontFamily": "Playfair Display"}
+                    }
+                  }
+                ]
+              }
+            ],
+            "campaigns": [
+              {
+                "id": "summer-2025",
+                "name": "Summer Wine Festival",
+                "startDate": "2025-06-01",
+                "endDate": "2025-08-31",
+                "type": "seasonal",
+                "content": [
+                  {
+                    "mediaUrl": "https://example.com/campaigns/wine-festival.mp4",
+                    "callToAction": "Join us every Thursday for Wine Tasting",
+                    "displayFrequency": "every 10 minutes"
+                  }
+                ]
+              }
+            ],
+            "brandContent": {
+              "brandStory": [
+                {
+                  "title": "Our Story",
+                  "content": "Since 2020, bringing authentic Italian flavors to the Nordic table",
+                  "visuals": ["https://example.com/brand/story-image-1.jpg"]
+                },
+                {
+                  "title": "From Italy to Your Table",
+                  "content": "We source ingredients from small family farms in Tuscany and Puglia",
+                  "visuals": ["https://example.com/brand/suppliers.jpg"]
+                }
+              ],
+              "chefProfiles": [
+                {
+                  "name": "Marco Rossi",
+                  "photo": "https://example.com/team/chef-marco.jpg",
+                  "bio": "Born in Bologna, trained in Florence, bringing 20 years of passion",
+                  "signature": "Tagliatelle al Tartufo"
+                }
+              ],
+              "ingredients": [
+                {
+                  "name": "San Marzano Tomatoes",
+                  "origin": "Campania, Italy - DOP Certified",
+                  "images": ["https://example.com/ingredients/san-marzano.jpg"],
+                  "description": "The gold standard for authentic Italian pizza and pasta sauces"
+                },
+                {
+                  "name": "Parmigiano Reggiano",
+                  "origin": "Emilia-Romagna, 24-month aged",
+                  "images": ["https://example.com/ingredients/parmigiano.jpg"],
+                  "description": "Handcrafted by Consorzio members since 1934"
+                }
+              ]
+            },
+            "socialFeed": {
+              "enabled": false,
+              "platform": "instagram",
+              "hashtags": ["#BellaVistaRestaurant", "#AuthenticItalian"],
+              "updateInterval": 300,
+              "moderation": true
+            }
+          },
+          "visualSettings": {
+            "theme": "Warm Italian Evening",
+            "colorScheme": {
+              "background": "#1A1A1A",
+              "text": "#F4EFE6",
+              "accent": "#C9734B"
+            },
+            "typography": {
+              "fontFamily": "Playfair Display",
+              "sizes": {"title": 48, "body": 24, "caption": 18}
+            },
+            "effects": ["ken-burns", "vignette"]
+          },
+          "interactivity": {
+            "touchEnabled": false,
+            "gestureControls": false,
+            "qrCodeIntegration": {
+              "enabled": false,
+              "purpose": ""
+            }
+          },
+          "synchronization": {
+            "syncWithOtherDisplays": true,
+            "syncWithLighting": true,
+            "syncWithMusic": false
+          }
+        },
+        {
+          "id": "AD-02",
+          "name": "Bar Area Campaign Display",
+          "location": "Bar wall",
+          "position": {"x": 0.5, "y": 17.0, "z": 1.6, "rotation": 0},
+          "hardware": {
+            "brand": "Samsung",
+            "model": "The Frame QN43LS03B",
+            "screenSize": 43,
+            "resolution": {"width": 3840, "height": 2160},
+            "orientation": "landscape",
+            "brightness": 500,
+            "mounting": "wall-mounted",
+            "bezel": "Wood-effect frame"
+          },
+          "content": {
+            "purpose": "campaign",
+            "playlists": [
+              {
+                "name": "Wine & Cocktails",
+                "schedule": {
+                  "startTime": "16:00",
+                  "endTime": "23:00",
+                  "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+                  "priority": 1
+                },
+                "items": [
+                  {
+                    "type": "image",
+                    "mediaUrl": "https://example.com/drinks/wine-selection.jpg",
+                    "duration": 20,
+                    "title": "Italian Wine Collection",
+                    "description": "50+ wines from Italy's finest regions",
+                    "transition": "fade",
+                    "overlay": {
+                      "text": "Ask about our sommelier's selection",
+                      "position": "bottom-center",
+                      "style": {"fontSize": 28, "color": "#F4EFE6"}
+                    }
+                  },
+                  {
+                    "type": "video",
+                    "mediaUrl": "https://example.com/drinks/negroni-making.mp4",
+                    "duration": 30,
+                    "title": "Negroni Sbagliato",
+                    "description": "Classic aperitivo",
+                    "transition": "fade",
+                    "overlay": {
+                      "text": "Happy Hour: 16-19 / €8",
+                      "position": "top-right",
+                      "style": {"fontSize": 24, "color": "#D4AF37"}
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "mediaUrl": "https://example.com/drinks/aperol-spritz.jpg",
+                    "duration": 18,
+                    "title": "Aperol Spritz",
+                    "description": "The perfect summer cocktail",
+                    "transition": "slide",
+                    "overlay": {
+                      "text": "€9",
+                      "position": "bottom-right",
+                      "style": {"fontSize": 36, "color": "#C9734B"}
+                    }
+                  }
+                ]
+              }
+            ],
+            "campaigns": [
+              {
+                "id": "happy-hour",
+                "name": "Aperitivo Hour",
+                "startDate": "2025-01-01",
+                "endDate": "2025-12-31",
+                "type": "promotion",
+                "content": [
+                  {
+                    "mediaUrl": "https://example.com/campaigns/happy-hour-promo.jpg",
+                    "callToAction": "Mon-Fri 16-19: All cocktails €8",
+                    "displayFrequency": "every 5 minutes"
+                  }
+                ]
+              }
+            ],
+            "brandContent": {
+              "brandStory": [],
+              "chefProfiles": [],
+              "ingredients": []
+            },
+            "socialFeed": {
+              "enabled": true,
+              "platform": "instagram",
+              "hashtags": ["#BellaVistaBar", "#ItalianCocktails"],
+              "updateInterval": 180,
+              "moderation": true
+            }
+          },
+          "visualSettings": {
+            "theme": "Art Gallery - Bar Atmosphere",
+            "colorScheme": {
+              "background": "#2C5F2D",
+              "text": "#F4EFE6",
+              "accent": "#D4AF37"
+            },
+            "typography": {
+              "fontFamily": "Lato",
+              "sizes": {"title": 40, "body": 22, "caption": 16}
+            },
+            "effects": ["gradient-overlay"]
+          },
+          "interactivity": {
+            "touchEnabled": false,
+            "gestureControls": false,
+            "qrCodeIntegration": {
+              "enabled": true,
+              "purpose": "Full cocktail menu & wine list"
+            }
+          },
+          "synchronization": {
+            "syncWithOtherDisplays": false,
+            "syncWithLighting": true,
+            "syncWithMusic": true
+          }
+        },
+        {
+          "id": "AD-03",
+          "name": "Entrance Welcome Display",
+          "location": "Entrance hallway",
+          "position": {"x": 5.5, "y": 1.0, "z": 1.5, "rotation": 0},
+          "hardware": {
+            "brand": "Samsung",
+            "model": "QM32R",
+            "screenSize": 32,
+            "resolution": {"width": 1920, "height": 1080},
+            "orientation": "portrait",
+            "brightness": 350,
+            "mounting": "stand",
+            "bezel": "Slim black"
+          },
+          "content": {
+            "purpose": "brand-story",
+            "playlists": [
+              {
+                "name": "Welcome & Events",
+                "schedule": {
+                  "startTime": "11:00",
+                  "endTime": "23:00",
+                  "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+                  "priority": 1
+                },
+                "items": [
+                  {
+                    "type": "animation",
+                    "mediaUrl": "https://example.com/animations/welcome-bella-vista.mp4",
+                    "duration": 10,
+                    "title": "Welcome",
+                    "description": "Animated logo reveal",
+                    "transition": "fade",
+                    "overlay": {
+                      "text": "Benvenuti a Bella Vista",
+                      "position": "center",
+                      "style": {"fontSize": 42, "color": "#2C5F2D", "fontFamily": "Playfair Display"}
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "mediaUrl": "https://example.com/events/tonight-specials.jpg",
+                    "duration": 15,
+                    "title": "Tonight's Specials",
+                    "description": "Daily changing menu",
+                    "transition": "slide",
+                    "overlay": {
+                      "text": "Ask your server about today's specials",
+                      "position": "bottom-center",
+                      "style": {"fontSize": 24, "color": "#F4EFE6"}
+                    }
+                  },
+                  {
+                    "type": "webpage",
+                    "mediaUrl": "https://example.com/reservations/calendar",
+                    "duration": 20,
+                    "title": "Upcoming Events",
+                    "description": "Live events calendar",
+                    "transition": "fade",
+                    "overlay": {
+                      "text": "",
+                      "position": "none",
+                      "style": {}
+                    }
+                  },
+                  {
+                    "type": "image",
+                    "mediaUrl": "https://example.com/brand/reservation-reminder.jpg",
+                    "duration": 12,
+                    "title": "Book Your Table",
+                    "description": "Reservation info",
+                    "transition": "fade",
+                    "overlay": {
+                      "text": "Reserve online or call +358 40 123 4567",
+                      "position": "bottom-center",
+                      "style": {"fontSize": 20, "color": "#2C5F2D"}
+                    }
+                  }
+                ]
+              }
+            ],
+            "campaigns": [
+              {
+                "id": "private-events",
+                "name": "Private Dining",
+                "startDate": "2025-01-01",
+                "endDate": "2025-12-31",
+                "type": "event",
+                "content": [
+                  {
+                    "mediaUrl": "https://example.com/campaigns/private-dining.jpg",
+                    "callToAction": "Host your event at Bella Vista - Up to 30 guests",
+                    "displayFrequency": "every 15 minutes"
+                  }
+                ]
+              }
+            ],
+            "brandContent": {
+              "brandStory": [
+                {
+                  "title": "Our Philosophy",
+                  "content": "Italian tradition meets Nordic sustainability",
+                  "visuals": ["https://example.com/brand/philosophy.jpg"]
+                }
+              ],
+              "chefProfiles": [],
+              "ingredients": []
+            },
+            "socialFeed": {
+              "enabled": true,
+              "platform": "instagram",
+              "hashtags": ["#BellaVistaRestaurant"],
+              "updateInterval": 300,
+              "moderation": true
+            }
+          },
+          "visualSettings": {
+            "theme": "Elegant Welcome",
+            "colorScheme": {
+              "background": "#F4EFE6",
+              "text": "#2C5F2D",
+              "accent": "#C9734B"
+            },
+            "typography": {
+              "fontFamily": "Playfair Display",
+              "sizes": {"title": 52, "body": 28, "caption": 20}
+            },
+            "effects": ["gradient-overlay"]
+          },
+          "interactivity": {
+            "touchEnabled": true,
+            "gestureControls": true,
+            "qrCodeIntegration": {
+              "enabled": true,
+              "purpose": "Menu access and reservations"
+            }
+          },
+          "synchronization": {
+            "syncWithOtherDisplays": false,
+            "syncWithLighting": false,
+            "syncWithMusic": false
+          }
+        }
+      ],
+      "displayManagement": {
+        "software": {
+          "provider": "Yodeck",
+          "version": "3.2.1",
+          "cloudBased": true
+        },
+        "remoteControl": true,
+        "contentScheduling": {
+          "automated": true,
+          "weatherIntegration": false,
+          "eventIntegration": true
+        },
+        "analytics": {
+          "enabled": true,
+          "metrics": ["view time", "engagement", "peak viewing hours", "content performance"]
+        }
+      }
+    }
+  },
+  "operations": {
+    "hours": {
+      "monday": {"open": "11:00", "close": "22:00", "closed": false},
+      "tuesday": {"open": "11:00", "close": "22:00", "closed": false},
+      "wednesday": {"open": "11:00", "close": "22:00", "closed": false},
+      "thursday": {"open": "11:00", "close": "23:00", "closed": false},
+      "friday": {"open": "11:00", "close": "23:00", "closed": false},
+      "saturday": {"open": "12:00", "close": "23:00", "closed": false},
+      "sunday": {"open": "12:00", "close": "22:00", "closed": false}
+    },
+    "serviceTypes": ["dine-in", "takeout", "delivery", "private-events"],
+    "averageServiceTime": 75,
+    "turnoverRate": 1.8
+  },
+  "location": {
+    "address": {
+      "street": "Mannerheimintie 24",
+      "city": "Helsinki",
+      "state": "Uusimaa",
+      "postalCode": "00100",
+      "country": "Finland"
+    },
+    "coordinates": {
+      "latitude": 60.1699,
+      "longitude": 24.9384
+    },
+    "neighborhood": "Kamppi",
+    "accessibility": {
+      "wheelchairAccessible": true,
+      "parking": false,
+      "publicTransport": true
+    }
+  },
+  "staff": {
+    "positions": [
+      {
+        "role": "head-chef",
+        "count": 1,
+        "shiftSchedule": {"morning": 0, "afternoon": 1, "evening": 1}
+      },
+      {
+        "role": "sous-chef",
+        "count": 2,
+        "shiftSchedule": {"morning": 1, "afternoon": 1, "evening": 2}
+      },
+      {
+        "role": "line-cook",
+        "count": 4,
+        "shiftSchedule": {"morning": 1, "afternoon": 2, "evening": 3}
+      },
+      {
+        "role": "server",
+        "count": 8,
+        "shiftSchedule": {"morning": 2, "afternoon": 3, "evening": 5}
+      },
+      {
+        "role": "bartender",
+        "count": 2,
+        "shiftSchedule": {"morning": 0, "afternoon": 1, "evening": 2}
+      },
+      {
+        "role": "host",
+        "count": 2,
+        "shiftSchedule": {"morning": 0, "afternoon": 1, "evening": 2}
+      },
+      {
+        "role": "manager",
+        "count": 2,
+        "shiftSchedule": {"morning": 1, "afternoon": 1, "evening": 1}
+      },
+      {
+        "role": "dishwasher",
+        "count": 2,
+        "shiftSchedule": {"morning": 1, "afternoon": 1, "evening": 2}
+      },
+      {
+        "role": "sommelier",
+        "count": 1,
+        "shiftSchedule": {"morning": 0, "afternoon": 0, "evening": 1}
+      }
+    ],
+    "totalStaff": 24
+  },
+  "kitchen": {
+    "type": "semi-open",
+    "equipment": [
+      {
+        "id": "OVEN-001",
+        "name": "Wood-fired Pizza Oven",
+        "type": "oven",
+        "brand": "Valoriani",
+        "model": "FVR110",
+        "capacity": "6-8 pizzas",
+        "powerRequirement": "Wood fired",
+        "position": {"x": 13.0, "y": 4.0}
+      },
+      {
+        "id": "STOVE-001",
+        "name": "Professional Gas Range",
+        "type": "stove",
+        "brand": "Molteni",
+        "model": "Serie 700",
+        "capacity": "6 burners",
+        "powerRequirement": "Natural gas",
+        "position": {"x": 14.5, "y": 5.0}
+      },
+      {
+        "id": "PASTA-001",
+        "name": "Pasta Cooker",
+        "type": "stove",
+        "brand": "Electrolux Professional",
+        "model": "E7PCEH4S00",
+        "capacity": "4 baskets",
+        "powerRequirement": "Electric 400V",
+        "position": {"x": 13.5, "y": 6.5}
+      },
+      {
+        "id": "FRIDGE-001",
+        "name": "Walk-in Cooler",
+        "type": "refrigerator",
+        "brand": "Foster",
+        "model": "WCFR-4",
+        "capacity": "4m³",
+        "powerRequirement": "Electric 230V",
+        "position": {"x": 15.5, "y": 8.0}
+      },
+      {
+        "id": "PREP-001",
+        "name": "Main Prep Station",
+        "type": "prep-station",
+        "brand": "Custom Stainless",
+        "model": "PSS-240",
+        "capacity": "2.4m work surface",
+        "powerRequirement": "None",
+        "position": {"x": 13.0, "y": 7.5}
+      }
+    ],
+    "stations": [
+      {
+        "name": "Pasta Station",
+        "position": {"x": 13.5, "y": 6.5}
+      },
+      {
+        "name": "Pizza Station",
+        "position": {"x": 13.0, "y": 4.0}
+      },
+      {
+        "name": "Grill & Sauté",
+        "position": {"x": 14.5, "y": 5.0}
+      },
+      {
+        "name": "Prep & Cold",
+        "position": {"x": 13.0, "y": 7.5}
+      },
+      {
+        "name": "Dessert & Plating",
+        "position": {"x": 15.0, "y": 7.0}
+      }
+    ]
+  },
+  "interiorDesign": {
+    "style": "Contemporary Italian with rustic elements",
+    "colorScheme": {
+      "primary": "#2C5F2D",
+      "secondary": "#F4EFE6",
+      "accent": "#C9734B"
+    },
+    "lighting": {
+      "type": "ambient",
+      "fixtures": []
+    },
+    "furniture": [
+      {
+        "type": "Dining chairs",
+        "material": "Walnut wood with leather upholstery",
+        "style": "Mid-century modern Italian",
+        "color": "Cognac brown"
+      },
+      {
+        "type": "Tables",
+        "material": "Solid oak with brass inlays",
+        "style": "Custom designed",
+        "color": "Natural oak with dark stain"
+      },
+      {
+        "type": "Banquette seating",
+        "material": "Velvet upholstery",
+        "style": "Tufted contemporary",
+        "color": "Deep forest green"
+      },
+      {
+        "type": "Bar stools",
+        "material": "Brass and leather",
+        "style": "Industrial Italian",
+        "color": "Black leather with brass frame"
+      }
+    ],
+    "decorations": [
+      {
+        "type": "artwork",
+        "description": "Large format Italian landscape photographs",
+        "position": {"x": 9.0, "y": 8.0, "z": 1.8}
+      },
+      {
+        "type": "plants",
+        "description": "Olive trees in terracotta pots",
+        "position": {"x": 1.0, "y": 2.0, "z": 0.0}
+      },
+      {
+        "type": "plants",
+        "description": "Fresh herb garden display",
+        "position": {"x": 12.0, "y": 3.5, "z": 0.0}
+      },
+      {
+        "type": "mirrors",
+        "description": "Antique brass-framed mirrors",
+        "position": {"x": 2.0, "y": 15.0, "z": 1.5}
+      }
+    ],
+    "flooring": "Reclaimed oak planks with matte finish",
+    "wallFinish": "Textured venetian plaster in cream, exposed brick accent wall"
+  },
+  "digitalPresence": {
+    "website": {
+      "url": "https://bellavista.fi",
+      "design": {
+        "hero": {
+          "type": "video",
+          "mediaFiles": [
+            "https://example.com/videos/hero-bella-vista.mp4"
+          ],
+          "overlayText": "Autentica Cucina Italiana",
+          "callToAction": {
+            "text": "Reserve Your Table",
+            "link": "/reservations"
+          }
+        },
+        "sections": [
+          {
+            "name": "About",
+            "layout": "two-column-text-image",
+            "content": "Our story of bringing Italian tradition to Finland"
+          },
+          {
+            "name": "Menu",
+            "layout": "interactive-menu-grid",
+            "content": "Full menu with filtering options"
+          },
+          {
+            "name": "Gallery",
+            "layout": "masonry-grid",
+            "content": "Photos of dishes and atmosphere"
+          },
+          {
+            "name": "Events",
+            "layout": "calendar-view",
+            "content": "Upcoming wine dinners and special events"
+          }
+        ],
+        "gallery": [
+          {
+            "image": "https://example.com/gallery/interior-01.jpg",
+            "caption": "Main dining room",
+            "category": "Interior"
+          },
+          {
+            "image": "https://example.com/gallery/pasta-01.jpg",
+            "caption": "Fresh tagliatelle",
+            "category": "Food"
+          },
+          {
+            "image": "https://example.com/gallery/wine-cellar.jpg",
+            "caption": "Our wine selection",
+            "category": "Drinks"
+          }
+        ]
+      },
+      "features": [
+        "online-reservation",
+        "menu-display",
+        "photo-gallery",
+        "blog",
+        "events",
+        "gift-cards"
+      ]
+    },
+    "socialMedia": {
+      "instagram": {
+        "handle": "@bellavistahelsinki",
+        "contentStrategy": {
+          "postFrequency": "Daily",
+          "contentTypes": ["Dish highlights", "Behind the scenes", "Wine features", "Customer experiences"],
+          "aestheticTheme": "Warm tones, natural light, rustic elegance",
+          "filterPresets": ["Slightly desaturated", "Warm temperature", "High clarity"]
+        }
+      },
+      "facebook": {
+        "pageUrl": "https://facebook.com/bellavistahelsinki",
+        "coverPhoto": "https://example.com/social/fb-cover.jpg",
+        "profilePhoto": "https://example.com/social/logo-square.jpg"
+      }
+    },
+    "menuDesign": {
+      "physical": {
+        "format": "booklet",
+        "size": {"width": 21, "height": 29.7, "unit": "cm"},
+        "material": "Premium textured paper",
+        "finish": "matte",
+        "layout": "https://example.com/menu/bella-vista-menu-print.pdf"
+      },
+      "digital": {
+        "pdfVersion": "https://example.com/menu/bella-vista-menu.pdf",
+        "webVersion": "https://bellavista.fi/menu",
+        "qrCode": "https://example.com/qr/menu-qr.svg"
+      }
+    }
+  },
+  "financial": {
+    "initialInvestment": 450000,
+    "monthlyRent": 8500,
+    "averageCheckSize": 65,
+    "projectedRevenue": {
+      "monthly": 95000,
+      "yearly": 1140000
+    },
+    "costs": {
+      "food": 28500,
+      "labor": 38000,
+      "utilities": 4200,
+      "other": 12000
+    }
+  },
+  "sustainability": {
+    "localSourcing": true,
+    "organicOptions": true,
+    "wasteManagement": {
+      "composting": true,
+      "recycling": true
+    },
+    "energyEfficiency": "efficient"
+  },
+  "licenses": [
+    {
+      "type": "Food Service License",
+      "number": "FSL-2020-HEL-8842",
+      "issueDate": "2020-03-15",
+      "expiryDate": "2026-03-15"
+    },
+    {
+      "type": "Alcohol Service License",
+      "number": "ASL-2020-HEL-3391",
+      "issueDate": "2020-03-20",
+      "expiryDate": "2025-12-31"
+    },
+    {
+      "type": "Health Permit",
+      "number": "HP-2024-HEL-1156",
+      "issueDate": "2024-01-10",
+      "expiryDate": "2025-01-10"
+    }
+  ],
+  "menu": {
+    "categories": [
+      {
+        "name": "Antipasti",
+        "items": [
+          {
+            "id": "AP001",
+            "name": "Bruschetta Classica",
+            "description": "Grilled sourdough, heirloom tomatoes, fresh basil, garlic, extra virgin olive oil",
+            "price": 12,
+            "ingredients": ["Sourdough bread", "Tomatoes", "Basil", "Garlic", "EVOO"],
+            "allergens": ["Gluten"],
+            "preparationTime": 8,
+            "calories": 180,
+            "image": "https://example.com/dishes/bruschetta.jpg"
+          },
+          {
+            "id": "AP002",
+            "name": "Burrata con Prosciutto di San Daniele",
+            "description": "Creamy burrata cheese, 18-month aged prosciutto, arugula, aged balsamic",
+            "price": 18,
+            "ingredients": ["Burrata", "Prosciutto", "Arugula", "Balsamic vinegar"],
+            "allergens": ["Dairy"],
+            "preparationTime": 5,
+            "calories": 320,
+            "image": "https://example.com/dishes/burrata.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Pasta",
+        "items": [
+          {
+            "id": "PS001",
+            "name": "Tagliatelle al Tartufo Nero",
+            "description": "Fresh egg tagliatelle, black truffle, butter, Parmigiano Reggiano",
+            "price": 28,
+            "ingredients": ["Egg pasta", "Black truffle", "Butter", "Parmesan"],
+            "allergens": ["Gluten", "Eggs", "Dairy"],
+            "preparationTime": 12,
+            "calories": 520,
+            "image": "https://example.com/dishes/tagliatelle-truffle.jpg"
+          },
+          {
+            "id": "PS002",
+            "name": "Spaghetti alla Carbonara",
+            "description": "Traditional Roman recipe with guanciale, egg yolk, pecorino romano, black pepper",
+            "price": 18,
+            "ingredients": ["Spaghetti", "Guanciale", "Eggs", "Pecorino", "Black pepper"],
+            "allergens": ["Gluten", "Eggs", "Dairy"],
+            "preparationTime": 10,
+            "calories": 680,
+            "image": "https://example.com/dishes/carbonara.jpg"
+          }
+        ]
+      }
+    ],
+    "drinkMenu": {
+      "wine": [
+        {
+          "id": "WR001",
+          "name": "Chianti Classico DOCG",
+          "description": "Castello di Ama 2019, Tuscany",
+          "price": 52,
+          "ingredients": ["Sangiovese grapes"],
+          "allergens": ["Sulfites"],
+          "preparationTime": 0,
+          "calories": 125,
+          "image": "https://example.com/drinks/chianti.jpg"
+        },
+        {
+          "id": "WW001",
+          "name": "Gavi di Gavi DOCG",
+          "description": "La Scolca 2022, Piemonte",
+          "price": 48,
+          "ingredients": ["Cortese grapes"],
+          "allergens": ["Sulfites"],
+          "preparationTime": 0,
+          "calories": 120,
+          "image": "https://example.com/drinks/gavi.jpg"
+        }
+      ],
+      "cocktails": [
+        {
+          "id": "CK001",
+          "name": "Negroni Sbagliato",
+          "description": "Campari, sweet vermouth, prosecco",
+          "price": 12,
+          "ingredients": ["Campari", "Sweet vermouth", "Prosecco"],
+          "allergens": ["Sulfites"],
+          "preparationTime": 3,
+          "calories": 180,
+          "image": "https://example.com/drinks/negroni-sbagliato.jpg"
+        },
+        {
+          "id": "CK002",
+          "name": "Aperol Spritz",
+          "description": "Aperol, prosecco, soda water, orange",
+          "price": 9,
+          "ingredients": ["Aperol", "Prosecco", "Soda", "Orange"],
+          "allergens": ["Sulfites"],
+          "preparationTime": 2,
+          "calories": 125,
+          "image": "https://example.com/drinks/aperol-spritz.jpg"
+        }
+      ],
+      "softDrinks": [
+        {
+          "id": "SD001",
+          "name": "San Pellegrino Limonata",
+          "description": "Italian lemon soda",
+          "price": 4.5,
+          "ingredients": ["Carbonated water", "Lemon juice", "Sugar"],
+          "allergens": [],
+          "preparationTime": 1,
+          "calories": 130,
+          "image": "https://example.com/drinks/limonata.jpg"
+        }
+      ],
+      "beer": [
+        {
+          "id": "BR001",
+          "name": "Peroni Nastro Azzurro",
+          "description": "Italian lager, 330ml",
+          "price": 6.5,
+          "ingredients": ["Water", "Barley malt", "Maize", "Hops"],
+          "allergens": ["Gluten"],
+          "preparationTime": 1,
+          "calories": 142,
+          "image": "https://example.com/drinks/peroni.jpg"
+        }
+      ]
+    }
+  }
+}
