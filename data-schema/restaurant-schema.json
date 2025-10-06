@@ -1,0 +1,835 @@
+"brandIdentity": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "type": "object",
+          "properties": {
+            "primary": {
+              "type": "object",
+              "properties": {
+                "file": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "format": {
+                  "type": "string",
+                  "enum": ["svg", "png", "jpg", "ai"]
+                },
+                "colorVersion": {
+                  "type": "string",
+                  "enum": ["full-color", "monochrome", "white", "black"]
+                }
+              }
+            },
+            "variations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "e.g., horizontal, stacked, icon-only"
+                  },
+                  "file": {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "usage": {
+                    "type": "string",
+                    "description": "Where this version should be used"
+                  }
+                }
+              }
+            },
+            "designElements": {
+              "type": "object",
+              "properties": {
+                "typography": {
+                  "type": "object",
+                  "properties": {
+                    "fontFamily": {
+                      "type": "string"
+                    },
+                    "fontWeight": {
+                      "type": "string"
+                    },
+                    "style": {
+                      "type": "string",
+                      "description": "e.g., serif, sans-serif, script, display"
+                    }
+                  }
+                },
+                "icon": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "string"
+                    },
+                    "symbolism": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "colors": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "hex": {
+                        "type": "string",
+                        "pattern": "^#[0-9A-Fa-f]{6}$"
+                      },
+                      "rgb": {
+                        "type": "object",
+                        "properties": {
+                          "r": {"type": "integer", "minimum": 0, "maximum": 255},
+                          "g": {"type": "integer", "minimum": 0, "maximum": 255},
+                          "b": {"type": "integer", "minimum": 0, "maximum": 255}
+                        }
+                      },
+                      "cmyk": {
+                        "type": "object",
+                        "properties": {
+                          "c": {"type": "integer", "minimum": 0, "maximum": 100},
+                          "m": {"type": "integer", "minimum": 0, "maximum": 100},
+                          "y": {"type": "integer", "minimum": 0, "maximum": 100},
+                          "k": {"type": "integer", "minimum": 0, "maximum": 100}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "colorPalette": {
+          "type": "object",
+          "properties": {
+            "primary": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "secondary": {
+              "type": "string",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "accent": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              }
+            },
+            "neutral": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^#[0-9A-Fa-f]{6}$"
+              }
+            }
+          }
+        },
+        "typography": {
+          "type": "object",
+          "properties": {
+            "headingFont": {
+              "type": "object",
+              "properties": {
+                "family": {"type": "string"},
+                "weights": {
+                  "type": "array",
+                  "items": {"type": "integer"}
+                },
+                "fallback": {"type": "string"}
+              }
+            },
+            "bodyFont": {
+              "type": "object",
+              "properties": {
+                "family": {"type": "string"},
+                "weights": {
+                  "type": "array",
+                  "items": {"type": "integer"}
+                },
+                "fallback": {"type": "string"}
+              }
+            },
+            "accentFont": {
+              "type": "object",
+              "properties": {
+                "family": {"type": "string"},
+                "usage": {"type": "string"}
+              }
+            }
+          }
+        },
+        "visualStyle": {
+          "type": "object",
+          "properties": {
+            "photography": {
+              "type": "object",
+              "properties": {
+                "style": {
+                  "type": "string",
+                  "description": "e.g., dark and moody, bright and airy, rustic"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                },
+                "composition": {
+                  "type": "string"
+                }
+              }
+            },
+            "patterns": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {"type": "string"},
+                  "file": {"type": "string", "format": "uri"},
+                  "usage": {"type": "string"}
+                }
+              }
+            },
+            "illustrations": {
+              "type": "object",
+              "properties": {
+                "style": {"type": "string"},
+                "elements": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "signage": {
+      "type": "object",
+      "properties": {
+        "exterior": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["main-sign", "awning", "window-decal", "sandwich-board", "neon", "led", "hanging-sign"]
+              },
+              "content": {
+                "type": "object",
+                "properties": {
+                  "text": {"type": "string"},
+                  "logo": {"type": "boolean"},
+                  "graphics": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  }
+                }
+              },
+              "design": {
+                "type": "object",
+                "properties": {
+                  "width": {"type": "number", "description": "Width in cm"},
+                  "height": {"type": "number", "description": "Height in cm"},
+                  "material": {"type": "string"},
+                  "colors": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "illuminated": {"type": "boolean"},
+                  "illuminationType": {
+                    "type": "string",
+                    "enum": ["backlit", "front-lit", "neon", "led", "none"]
+                  }
+                }
+              },
+              "position": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string",
+                    "description": "e.g., above door, in window, on sidewalk"
+                  },
+                  "height": {"type": "number"},
+                  "visible": {"type": "boolean"}
+                }
+              }
+            }
+          }
+        },
+        "windowGraphics": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "windowId": {"type": "string"},
+              "design": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["full-coverage", "partial-frosted", "decals", "painted", "vinyl-text"]
+                  },
+                  "layout": {"type": "string", "format": "uri"},
+                  "elements": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "type": {"type": "string"},
+                        "content": {"type": "string"},
+                        "position": {
+                          "type": "object",
+                          "properties": {
+                            "x": {"type": "number"},
+                            "y": {"type": "number"},
+                            "width": {"type": "number"},
+                            "height": {"type": "number"}
+                          }
+                        },
+                        "opacity": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        }
+                      }
+                    }
+                  },
+                  "seasonalChanges": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "season": {"type": "string"},
+                        "design": {"type": "string", "format": "uri"}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "interior": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["menu-board", "wayfinding", "wall-art", "table-tents", "bathroom-signs", "specials-board"]
+              },
+              "location": {"type": "string"},
+              "design": {
+                "type": "object",
+                "properties": {
+                  "file": {"type": "string", "format": "uri"},
+                  "size": {
+                    "type": "object",
+                    "properties": {
+                      "width": {"type": "number"},
+                      "height": {"type": "number"}
+                    }
+                  },
+                  "material": {"type": "string"}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "lighting": {
+      "type": "object",
+      "properties": {
+        "zones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "e.g., main dining, bar area, entrance"
+              },
+              "fixtures": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {"type": "string"},
+                    "type": {
+                      "type": "string",
+                      "enum": ["pendant", "chandelier", "recessed", "track", "wall-sconce", "floor-lamp", "table-lamp", "led-strip", "candle"]
+                    },
+                    "brand": {"type": "string"},
+                    "model": {"type": "string"},
+                    "position": {
+                      "type": "object",
+                      "properties": {
+                        "x": {"type": "number"},
+                        "y": {"type": "number"},
+                        "z": {"type": "number"}
+                      }
+                    },
+                    "specifications": {
+                      "type": "object",
+                      "properties": {
+                        "wattage": {"type": "integer"},
+                        "lumens": {"type": "integer"},
+                        "colorTemperature": {
+                          "type": "integer",
+                          "description": "In Kelvin (e.g., 2700K warm, 5000K cool)"
+                        },
+                        "dimmable": {"type": "boolean"},
+                        "smartControl": {"type": "boolean"}
+                      }
+                    },
+                    "design": {
+                      "type": "object",
+                      "properties": {
+                        "style": {"type": "string"},
+                        "material": {"type": "string"},
+                        "color": {"type": "string"},
+                        "size": {
+                          "type": "object",
+                          "properties": {
+                            "diameter": {"type": "number"},
+                            "height": {"type": "number"}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ambiance": {
+                "type": "object",
+                "properties": {
+                  "scenes": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "description": "e.g., lunch, dinner, late-night, cleaning"
+                        },
+                        "time": {"type": "string"},
+                        "brightness": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "maximum": 100
+                        },
+                        "colorTemp": {"type": "integer"},
+                        "fixtureSettings": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "fixtureId": {"type": "string"},
+                              "brightness": {"type": "integer"}
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "naturalLight": {
+                "type": "object",
+                "properties": {
+                  "windows": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {"type": "string"},
+                        "size": {
+                          "type": "object",
+                          "properties": {
+                            "width": {"type": "number"},
+                            "height": {"type": "number"}
+                          }
+                        },
+                        "orientation": {
+                          "type": "string",
+                          "enum": ["north", "south", "east", "west"]
+                        },
+                        "treatments": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": ["curtains", "blinds", "shades", "shutters", "none"]
+                            },
+                            "opacity": {"type": "integer"},
+                            "automated": {"type": "boolean"}
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "audioAtmosphere": {
+      "type": "object",
+      "properties": {
+        "musicSystem": {
+          "type": "object",
+          "properties": {
+            "provider": {
+              "type": "string",
+              "description": "e.g., Spotify Business, custom system"
+            },
+            "speakers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {"type": "string"},
+                  "zone": {"type": "string"},
+                  "type": {"type": "string"},
+                  "position": {
+                    "type": "object",
+                    "properties": {
+                      "x": {"type": "number"},
+                      "y": {"type": "number"},
+                      "z": {"type": "number"}
+                    }
+                  },
+                  "power": {"type": "integer", "description": "Watts"},
+                  "volumeControl": {
+                    "type": "string",
+                    "enum": ["independent", "zoned", "master"]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "playlists": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "timeSlot": {
+                "type": "object",
+                "properties": {
+                  "start": {"type": "string", "pattern": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"},
+                  "end": {"type": "string", "pattern": "^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$"},
+                  "days": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+                    }
+                  }
+                }
+              },
+              "mood": {
+                "type": "string",
+                "description": "e.g., upbeat, relaxing, romantic, energetic"
+              },
+              "genres": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "tempo": {
+                "type": "object",
+                "properties": {
+                  "bpmRange": {
+                    "type": "object",
+                    "properties": {
+                      "min": {"type": "integer"},
+                      "max": {"type": "integer"}
+                    }
+                  },
+                  "energy": {
+                    "type": "string",
+                    "enum": ["low", "medium", "high"]
+                  }
+                }
+              },
+              "volume": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100,
+                "description": "Percentage of max volume"
+              },
+              "tracks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {"type": "string"},
+                    "artist": {"type": "string"},
+                    "album": {"type": "string"},
+                    "duration": {"type": "integer", "description": "Duration in seconds"},
+                    "spotifyUri": {"type": "string"},
+                    "genre": {"type": "string"}
+                  }
+                }
+              },
+              "restrictions": {
+                "type": "object",
+                "properties": {
+                  "explicit": {"type": "boolean"},
+                  "excludedWords": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ambientSounds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "e.g., kitchen sounds, nature, rain"
+              },
+              "volume": {"type": "integer"},
+              "zones": {
+                "type": "array",
+                "items": {"type": "string"}
+              }
+            }
+          }
+        },
+        "acoustics": {
+          "type": "object",
+          "properties": {
+            "soundproofing": {
+              "type": "object",
+              "properties": {
+                "walls": {"type": "boolean"},
+                "ceiling": {"type": "boolean"},
+                "floor": {"type": "boolean"}
+              }
+            },
+            "materials": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "location": {"type": "string"},
+                  "material": {"type": "string"},
+                  "absorptionCoefficient": {"type": "number"}
+                }
+              }
+            },
+            "noiseLevel": {
+              "type": "object",
+              "properties": {
+                "target": {
+                  "type": "integer",
+                  "description": "Target dB level"
+                },
+                "typical": {
+                  "type": "integer",
+                  "description": "Typical dB level during service"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "digitalPresence": {
+      "type": "object",
+      "properties": {
+        "website": {
+          "type": "object",
+          "properties": {
+            "url": {"type": "string", "format": "uri"},
+            "design": {
+              "type": "object",
+              "properties": {
+                "hero": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": ["image", "video", "slideshow"]
+                    },
+                    "mediaFiles": {
+                      "type": "array",
+                      "items": {"type": "string", "format": "uri"}
+                    },
+                    "overlayText": {"type": "string"},
+                    "callToAction": {
+                      "type": "object",
+                      "properties": {
+                        "text": {"type": "string"},
+                        "link": {"type": "string"}
+                      }
+                    }
+                  }
+                },
+                "sections": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {"type": "string"},
+                      "layout": {"type": "string"},
+                      "content": {"type": "string"}
+                    }
+                  }
+                },
+                "gallery": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "image": {"type": "string", "format": "uri"},
+                      "caption": {"type": "string"},
+                      "category": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            },
+            "features": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["online-reservation", "menu-display", "photo-gallery", "blog", "events", "gift-cards", "online-ordering"]
+              }
+            }
+          }
+        },
+        "socialMedia": {
+          "type": "object",
+          "properties": {
+            "instagram": {
+              "type": "object",
+              "properties": {
+                "handle": {"type": "string"},
+                "contentStrategy": {
+                  "type": "object",
+                  "properties": {
+                    "postFrequency": {"type": "string"},
+                    "contentTypes": {
+                      "type": "array",
+                      "items": {"type": "string"}
+                    },
+                    "aestheticTheme": {"type": "string"},
+                    "filterPresets": {
+                      "type": "array",
+                      "items": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            },
+            "facebook": {
+              "type": "object",
+              "properties": {
+                "pageUrl": {"type": "string"},
+                "coverPhoto": {"type": "string", "format": "uri"},
+                "profilePhoto": {"type": "string", "format": "uri"}
+              }
+            }
+          }
+        },
+        "menuDesign": {
+          "type": "object",
+          "properties": {
+            "physical": {
+              "type": "object",
+              "properties": {
+                "format": {
+                  "type": "string",
+                  "enum": ["single-page", "bifold", "trifold", "booklet", "board", "digital-tablet"]
+                },
+                "size": {
+                  "type": "object",
+                  "properties": {
+                    "width": {"type": "number"},
+                    "height": {"type": "number"},
+                    "unit": {"type": "string", "enum": ["cm", "inches"]}
+                  }
+                },
+                "material": {"type": "string"},
+                "finish": {
+                  "type": "string",
+                  "enum": ["matte", "glossy", "laminated", "leather-bound"]
+                },
+                "layout": {"type": "string", "format": "uri"}
+              }
+            },
+            "digital": {
+              "type": "object",
+              "properties": {
+                "pdfVersion": {"type": "string", "format": "uri"},
+                "webVersion": {"type": "string", "format": "uri"},
+                "qrCode": {"type": "string", "format": "uri"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "marketing": {
+      "type": "object",
+      "properties": {
+        "photography": {
+          "type": "object",
+          "properties": {
+            "food": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "dishName": {"type": "string"},
+                  "images": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "url": {"type": "string", "format": "uri"},
+                        "angle": {"type": "string"},
+                        "lighting": {"type": "string"},
+                        "styling": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "interior": {
+              "type": "array",
+              "items": {"type": "string", "format": "uri"}
+            },
+            "atmosphere": {
+              "type": "array",
+              "items": {"type": "string", "format": "uri"}
+            },
+            "team": {
+              "type": "array",
+              "items": {"type": "string", "format": "uri"}
+            }
+          }
+        }
+      }
+    }
